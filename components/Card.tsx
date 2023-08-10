@@ -14,7 +14,7 @@ export default function Card({ index }: { index: number }) {
   return (
     <div className="lg:scale-[1.5]">
       <div
-        className="relative w-80 h-48 rounded-3xl border bg-gradient-radial from-pink-600/5 to-transparent border-white/50 backdrop-blur-md overflow-hidden transition-transform duration-1000"
+        className="relative w-80 h-48 rounded-3xl border bg-gradient-radial from-pink-600/5 to-transparent border-red-100/20 backdrop-blur-md overflow-hidden transition-transform duration-1000"
         style={{
           transform: getTransform(),
         }}
