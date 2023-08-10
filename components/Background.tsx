@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 
-const offsets = [2, 1, 2, 3];
+const offsets = [2, 0.9, 1.2, 2];
 
 export default function Background({ index }: { index: number }) {
   const [mounted, setMounted] = useState(false);
@@ -23,7 +23,7 @@ export default function Background({ index }: { index: number }) {
           transform: getTransform(0),
         }}
       >
-        <div className="-translate-x-[15vw]">
+        <div className="lg:-translate-x-[15vw] -translate-x-[30vw]">
           <img src="/assets/1.png" className="w-full h-full object-contain" />
         </div>
       </div>
@@ -44,17 +44,17 @@ export default function Background({ index }: { index: number }) {
           transform: getTransform(2),
         }}
       >
-        <div className="translate-x-[20vw]">
+        <div className="lg:translate-x-[20vw] translate-x-[30vw]">
           <img src="/assets/3.png" className="w-full h-full object-contain" />
         </div>
       </div>
       <div
-        className="absolute top-[1600px] w-[100vw] h-[100vw] lg:w-[40vw] lg:h-[40vw] transition-transform"
+        className="absolute top-[1200px] w-[100vw] h-[100vw] lg:w-[40vw] lg:h-[40vw] transition-transform"
         style={{
           transform: getTransform(3),
         }}
       >
-        <div className="-translate-x-[10vw]">
+        <div className="translate-x-[10vw]">
           <img src="/assets/4.png" className="w-full h-full object-contain" />
         </div>
       </div>
