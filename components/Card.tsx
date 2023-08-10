@@ -1,29 +1,23 @@
-import { useCallback, useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
-export default function Card() {
+export default function Card({ index }: { index: number }) {
   const cardRef = useRef<HTMLDivElement>(null);
-
-  const handleScroll = useCallback(() => {
-    if (cardRef.current)
-      cardRef.current.style.transform = `scaleX(${
-        -Math.min(0.2, Math.abs(window.scrollY - window.screenY - 700) / 1000) +
-        1
-      }) skew(0deg, ${Math.max(
-        -10,
-        Math.min(10, (window.scrollY - window.screenY - 700) / 10)
-      )}deg)`;
+  const [mounted, setMounted] = useState(false);
+  const getTransform = useCallback(() => {
+    if (mounted && index == 1) return `scaleX(0.9) skew(0deg, 10deg)`;
+    return "scaleX(1) skew(0)";
+  }, [index]);
+  useEffect(() => {
+    setMounted(true);
   }, []);
 
-  useEffect(() => {
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [handleScroll]);
   return (
     <div className="lg:scale-[1.5]">
       <div
-        className="relative w-80 h-48 rounded-3xl border bg-gradient-radial from-pink-600/5 to-transparent border-white/50 backdrop-blur-md overflow-hidden transition-transform"
-        ref={cardRef}
+        className="relative w-80 h-48 rounded-3xl border bg-gradient-radial from-pink-600/5 to-transparent border-white/50 backdrop-blur-md overflow-hidden transition-transform duration-1000"
+        style={{
+          transform: getTransform(),
+        }}
       >
         <div className="absolute -top-1/2 -left-1/4 w-2/3 h-96 bg-white/10 backdrop-blur-sm -rotate-12" />
         <div className="absolute w-full h-full flex flex-col px-8 pt-8">

@@ -9,10 +9,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 @keyframes card {
   0% {
     transform: scaleX(0.8) skew(0deg, -10deg);
@@ -26,7 +22,7 @@ html {
 }
 
 .card {
-  animation: card 5s linear forwards;
+  animation: card 1s 2s linear forwards;
 }
 
 @keyframes mouse-scroll {
@@ -47,4 +43,8 @@ html {
 
 .mouse-scroll {
   animation: mouse-scroll 1.5s linear infinite;
+}
+
+.swiper-slide {
+  height: 100vh !important;
 }
