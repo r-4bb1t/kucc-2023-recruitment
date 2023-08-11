@@ -4,7 +4,7 @@ export default function Card({ index }: { index: number }) {
   const cardRef = useRef<HTMLDivElement>(null);
   const [mounted, setMounted] = useState(false);
   const getTransform = useCallback(() => {
-    if (mounted && index == 2) return `scaleX(0.9) skew(0deg, 10deg)`;
+    if (mounted && index == 3) return `scaleX(0.9) skew(0deg, 10deg)`;
     return "scaleX(1) skew(0)";
   }, [index]);
   useEffect(() => {

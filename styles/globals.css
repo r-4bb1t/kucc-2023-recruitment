@@ -4,6 +4,22 @@
 
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
 
+@layer components {
+  .badge {
+    @apply relative rounded-full lg:px-8 lg:py-4 px-3 py-1 lg:text-2xl text-sm bg-white/5 backdrop-blur-md before:content-["#_"] border border-white/30
+    after:inline-block after:text-[8px] after:lg:text-sm after:lg:-translate-y-2 after:-translate-y-0.5 after:lg:ml-1 after:ml-0.5 whitespace-nowrap;
+  }
+  .session {
+    @apply after:content-['세션'];
+  }
+  .study {
+    @apply after:content-['스터디'];
+  }
+  .project {
+    @apply after:content-['프로젝트'];
+  }
+}
+
 * {
   font-family: "Pretendard";
   box-sizing: border-box;

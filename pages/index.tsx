@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/mousewheel";
 import { useState } from "react";
 import Plan from "@/components/Plan";
+import Study from "@/components/Study";
 
 export default function Home() {
   const [index, setIndex] = useState(0);
@@ -43,6 +44,9 @@ export default function Home() {
               <div className="mouse-scroll w-1 h-1 rounded-full bg-white" />
             </div>
           </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Study />
         </SwiperSlide>
         <SwiperSlide>
           <Plan />

@@ -7,7 +7,7 @@ export default function Plan() {
   >("none");
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center">
-      <div className="text-3xl mb-24 font-bold px-12 text-center">Plan</div>
+      <div className="text-3xl mb-16 font-bold px-12 text-center">Plan</div>
       <div className="w-full flex flex-col items-center text-lg px-6">
         <div className="w-full max-w-xl grid grid-cols-3">
           <CalendarItem date={new Date("2023-08-27")} labels={[""]} />
@@ -40,6 +40,15 @@ export default function Plan() {
           />
         </div>
       </div>
+
+      <ul className="w-full px-12 list-disc mt-8">
+        <li>
+          <strong>OT 및 개강총회 </strong>09/11 (월)
+        </li>
+        <li>
+          <strong>MT </strong>09/15 (금) - 09/16 (토)
+        </li>
+      </ul>
     </div>
   );
 }
