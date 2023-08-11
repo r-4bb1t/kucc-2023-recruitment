@@ -15,7 +15,7 @@ export default function CalendarItem({
     <div className="p-0 py-2">
       <div
         className={classcat([
-          "relative text-base font-semibold flex flex-col items-center w-full justify-center h-8 border-white border-y",
+          "relative text-base font-semibold flex flex-col items-center w-full justify-center h-8 bg-white text-black",
         ])}
       >
         {format(date, "MM/dd (E)", { locale: ko })}
