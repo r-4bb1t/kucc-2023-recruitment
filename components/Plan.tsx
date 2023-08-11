@@ -41,14 +41,16 @@ export default function Plan() {
         </div>
       </div>
 
-      <ul className="w-full px-12 list-disc mt-8">
-        <li>
-          <strong>OT 및 개강총회 </strong>09/11 (월)
-        </li>
-        <li>
-          <strong>MT </strong>09/15 (금) - 09/16 (토)
-        </li>
-      </ul>
+      <div className="w-full flex justify-center">
+        <ul className="w-full px-12 list-disc mt-8">
+          <li>
+            <strong>OT 및 개강총회 </strong>09/11 (월)
+          </li>
+          <li>
+            <strong>MT </strong>09/15 (금) - 09/16 (토)
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
