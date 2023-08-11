@@ -14,7 +14,7 @@ export default function Plan() {
             <td>MON</td>
             <td>TUE</td>
             <td>WED</td>
-            <td>TUR</td>
+            <td>THU</td>
             <td>FRI</td>
             <td>SAT</td>
             <td>SUN</td>
