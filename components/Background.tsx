@@ -23,18 +23,18 @@ export default function Background({ index }: { index: number }) {
           transform: getTransform(0),
         }}
       >
-        <div className="lg:-translate-x-[15vw] -translate-x-[30vw]">
+        <div className="lg:-translate-x-[25vw] -translate-x-[30vw]">
           <img src="/assets/1.png" className="w-full h-full object-contain" />
         </div>
       </div>
 
       <div
-        className="absolute top-[1200px] w-[100vw] h-[100vw] lg:w-[35vw] lg:h-[35vw] transition-transform"
+        className="absolute top-[1400px] w-[60vw] h-[60vw] lg:w-[35vw] lg:h-[35vw] transition-transform"
         style={{
           transform: getTransform(1),
         }}
       >
-        <div className="-translate-x-[20vw]">
+        <div className="lg:-translate-x-[40vw] -translate-x-[50vw]">
           <img src="/assets/2.png" className="w-full h-full object-contain" />
         </div>
       </div>
@@ -44,7 +44,7 @@ export default function Background({ index }: { index: number }) {
           transform: getTransform(2),
         }}
       >
-        <div className="lg:translate-x-[20vw] translate-x-[30vw]">
+        <div className="lg:translate-x-[30vw] translate-x-[30vw]">
           <img src="/assets/3.png" className="w-full h-full object-contain" />
         </div>
       </div>
@@ -54,7 +54,7 @@ export default function Background({ index }: { index: number }) {
           transform: getTransform(3),
         }}
       >
-        <div className="translate-x-[10vw]">
+        <div className="translate-x-[30vw]">
           <img src="/assets/4.png" className="w-full h-full object-contain" />
         </div>
       </div>

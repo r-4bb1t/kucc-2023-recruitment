@@ -48,3 +48,16 @@
 .swiper-slide {
   height: 100vh !important;
 }
+
+.table {
+  table-layout: fixed;
+}
+
+.table thead {
+  font-weight: 700;
+  border-bottom: 1px solid white;
+}
+
+.table td {
+  text-align: center;
+}

@@ -5,7 +5,7 @@ import { Mousewheel } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/mousewheel";
 import { useState } from "react";
-import Test from "@/components/Test";
+import Plan from "@/components/Plan";
 
 export default function Home() {
   const [index, setIndex] = useState(0);
@@ -45,7 +45,7 @@ export default function Home() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <Test />
+          <Plan />
         </SwiperSlide>
         <SwiperSlide>
           <div className="w-full h-screen flex flex-col items-center justify-center">
@@ -87,20 +87,20 @@ export default function Home() {
         <SwiperSlide>
           <div className="w-full h-screen flex flex-col items-center justify-center">
             <div className="text-3xl mb-24 lg:mb-48 font-bold">Contact</div>
-            <div className="text-center text-2xl">
+            <div className="text-center text-xl">
               <strong>회장</strong> 명재위
               <br />
-              010-1234-1234
+              010-3096-8941
             </div>
-            <div className="text-center text-2xl mt-8">
+            <div className="text-center text-xl mt-8">
               <strong>부회장</strong> 김채린
               <br />
-              010-1234-1234
+              010-8628-8084
             </div>
-            <div className="text-center text-2xl mt-8">
+            <div className="text-center text-xl mt-8">
               <strong>부회장</strong> 박성철
               <br />
-              010-1234-1234
+              010-6355-8791
             </div>
           </div>
         </SwiperSlide>
