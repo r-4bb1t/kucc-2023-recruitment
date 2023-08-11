@@ -26,16 +26,25 @@ export default function Plan() {
                 date={new Date("2023-08-29")}
                 labels={["지원서 제출"]}
               />
-              <CalendarTd date={new Date("2023-08-30")} labels={[""]} />
+              <CalendarTd
+                date={new Date("2023-08-30")}
+                labels={[""]}
+                type="right"
+              />
               <CalendarTd date={new Date("2023-08-31")} />
               <CalendarTd date={new Date("2023-09-01")} />
-              <CalendarTd date={new Date("2023-09-02")} labels={[""]} />
+              <CalendarTd
+                date={new Date("2023-09-02")}
+                labels={[""]}
+                type="left"
+              />
               <CalendarTd date={new Date("2023-09-03")} labels={["면접"]} />
             </tr>
             <tr>
               <CalendarTd
                 date={new Date("2023-09-04")}
                 labels={["면접", "합격자 발표"]}
+                type="two"
               />
               <CalendarTd date={new Date("2023-09-05")} />
               <CalendarTd date={new Date("2023-09-06")} />
