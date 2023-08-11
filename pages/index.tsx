@@ -16,7 +16,7 @@ export default function Home() {
         {[...Array(index + 1)].map((_, i) => (
           <div key={i} className="w-4 h-1 bg-white"></div>
         ))}
-        {[...Array(4 - index)].map((_, i) => (
+        {[...Array(5 - index)].map((_, i) => (
           <div key={i} className="w-4 h-1 bg-white/30"></div>
         ))}
       </header>
