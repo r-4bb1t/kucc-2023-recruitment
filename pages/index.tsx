@@ -89,7 +89,7 @@ export default function Home() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full h-screen flex flex-col items-center justify-center">
+          <div className="w-full h-screen flex flex-col items-center justify-center relative">
             <div className="text-3xl mb-24 lg:mb-48 font-bold">Contact</div>
             <div className="text-center text-xl">
               <strong>회장</strong> 명재위
@@ -107,6 +107,16 @@ export default function Home() {
               010-6355-8791
             </div>
           </div>
+          <footer className="w-full text-center py-6 absolute bottom-0 text-xs lg:text-lg">
+            Made by
+            <a
+              href="https://r4bb1t.dev/"
+              target="_blank"
+              className="inline-block ml-1 lg:ml-2 bg-white text-black px-1 lg:px-2 rounded"
+            >
+              @r-4bb1t
+            </a>
+          </footer>
         </SwiperSlide>
       </Swiper>
     </main>

@@ -42,7 +42,7 @@ export default function Plan() {
       </div>
 
       <div className="w-full flex justify-center">
-        <ul className="w-full px-12 list-disc mt-8">
+        <ul className="px-12 list-disc mt-8">
           <li>
             <strong>OT 및 개강총회 </strong>09/11 (월)
           </li>
