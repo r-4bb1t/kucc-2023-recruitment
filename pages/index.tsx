@@ -57,9 +57,13 @@ export default function Home() {
               Do You Want To Join Us?
             </div>
             <Card index={index} />
-            <button className="px-8 py-4 rounded-full bg-white text-black font-bold text-lg mt-20 lg:mt-40">
+            <a
+              href="https://forms.gle/ygNSV3b5jz9QJNbs6"
+              target="_blank"
+              className="block px-8 py-4 rounded-full bg-white text-black font-bold text-lg mt-20 lg:mt-40"
+            >
               REGISTER NOW
-            </button>
+            </a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
